@@ -1,0 +1,387 @@
+.project{
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+
+
+.projectHeader{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.projectHeader h4{
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.projectContent{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projectTabs{
+    display: flex;
+    gap: 1rem; 
+    justify-content: center;
+}
+
+.projectTabs button{
+    padding: 10px 10px;
+    background-color: transparent; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+}
+
+
+.projectTabs button.active{
+    color: #fff; 
+    border-bottom: 1px solid var(--thirdary-color); 
+}
+
+
+
+.projectList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.seeButtons{
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.seeLessButton,
+.seeMoreButton{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.seeLessButton:hover,
+.seeMoreButton:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.73rem 1.5rem;
+}
+
+
+.projectSystemItem{
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 300px;
+    position: relative;
+    color: #fff;
+    cursor: default;
+}
+
+.projectSystemImage{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projectSystemImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s, filter 0.3s;
+}
+
+.hoverImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.projectSystemItem:hover .projectSystemImage img{
+    filter: blur(5px);
+}
+
+.projectSystemItem:hover .projectSystemImage .hoverImage{
+    opacity: 1;
+}
+
+.hoverImageContent{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.projectSystemDetails{
+    padding: 15px;
+    color: #fff;
+}
+
+.projectSystemDetails h5{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projectSystemDetails p{
+    font-size: 14px;
+    color: #bebebe;
+}
+
+.projectSystemImage .viewProject{
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.projectSystemImage .viewProject:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* portraits */
+.projectPortraitsItem{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+  
+.projectPortraitsImage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: rotateX(10deg) rotateY(10deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+  
+.projectPortraitsImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+  
+.projectPortraitsItem:nth-child(odd) .projectPortraitsImage{
+    transform: rotateX(-10deg) rotateY(-10deg);
+}
+  
+.projectPortraitsItem:hover .projectPortraitsImage{
+    transform: rotateX(0deg) rotateY(0deg);
+}
+  
+
+.projectFooter{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.projectFooter h4{
+    color: #fff;
+}
+
+.projectFooter h4 a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    animation: zoomInOut 2s infinite;
+}
+
+@keyframes zoomInOut{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .projectPortraitsItem{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        cursor: pointer;
+        flex: 1 1 calc(50% - 10px);
+        margin: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 512px){
+    .projectHeader h4{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+      
+    .projectFooter{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .projectFooter h4{
+        font-size: .9rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .navButton{
+        position: absolute;
+    }
+    
+    .seeLessButton,
+    .seeMoreButton{
+        display: inline-block;
+        padding: 0.50rem 1rem;
+        background-color: var(--primary-color);
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .seeLessButton:hover,
+    .seeMoreButton:hover{
+        background-color: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        padding: 0.49rem 1rem;
+    }
+}
+
+
+/* new */
+.hoverButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.viewFullImageBtn{
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.viewFullImageBtn:hover{
+    background: rgba(255, 255, 255, 1);
+}
+
+.projectCaption{
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.projectDescription{
+    margin: 15px 0;
+}
+
+.projectDescription p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #bebebe;
+}
+
+.techStack{
+    margin-top: 15px;
+}
+
+.techStack h6{
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.techTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.techTag{
+    background: #e3fdec;
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #bbfbdd;
+}
+
+
+
+@media (max-width: 768px){
+    .hoverButtons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .viewFullImageBtn{
+        flex: 1;
+        margin-right: 5px;
+    }
+    
+    .viewProject{
+        flex: 1;
+        margin-left: 5px;
+        text-align: center;
+    }
+}

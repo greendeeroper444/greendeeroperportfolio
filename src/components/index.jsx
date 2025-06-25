@@ -1,0 +1,9 @@
+export { default as Navbar } from './Navbar/Navbar';
+export { default as Sidebar } from './Sidebar/Sidebar';
+export { default as About } from './Abouts/About';
+export { default as Projects } from './Projects/Project';
+export { default as Achievement } from './Achievement/Achievement';
+export { default as TechTools } from './TechTools/TechTools';
+export { default as Contact } from './Contact/Contact';
+export { default as Sidelink } from './Sidelink/Sidelink';
+export { default as Home } from './Home/Home';

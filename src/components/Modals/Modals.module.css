@@ -1,0 +1,169 @@
+/* modal1 */
+.projectModalContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    touch-action: auto;
+}
+  
+.projectModalContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.zoomedImage{
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+  
+.navButton{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    z-index: 1000;
+}
+  
+.prevButton{
+    left: 10px;
+}
+  
+.nextButton{
+    right: 10px;
+}
+/* end modal1 */
+
+
+
+/* modal2 */
+.fullImageModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modalContent{
+    background: white;
+    border-radius: 12px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.closeModal{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.closeModal:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.fullImage{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px 12px 0 0;
+}
+
+.modalInfo{
+    padding: 20px;
+    background-color: #111;
+}
+
+.modalInfo h3{
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.modalInfo p{
+    line-height: 1.6;
+    color: #bebebe;
+    margin-bottom: 20px;
+}
+
+.modalTechStack{
+    margin-top: 20px;
+}
+
+.modalTechStack strong{
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.modalTechTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modalTechTag{
+    background: #e3fdec;
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #bbfbdd;
+}
+
+@media (max-width: 768px){
+    .modalContent{
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .modalInfo{
+        padding: 15px;
+    }
+    
+    .modalInfo h3{
+        font-size: 20px;
+    }
+    
+    .hoverButtons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* end modal 2 */

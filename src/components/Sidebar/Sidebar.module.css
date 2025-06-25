@@ -1,0 +1,67 @@
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    z-index: 10000;
+    transition: transform 0.3s ease;
+    top: 0;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.xTimeIcon {
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.xTimeIcon:hover {
+    background-color: #084708;
+}
+
+.xTimeIcon svg {
+    width: 24px;
+    height: 24px;
+    color: #cfcfcf;
+}
+
+.xTimeIcon svg:hover {
+    color: #fff;
+}
+
+.sidebarNav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarNavLink {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebarNavLink:hover {
+    color: #bbb;
+    background-color: #161616;
+}
+
+.sidebarNavLink.active {
+    color: #00b45a;
+    background-color: #0e0e0e;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+}

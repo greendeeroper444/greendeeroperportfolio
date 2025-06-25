@@ -1,0 +1,8 @@
+export { default as cookBookScreenshot } from './cookbook-screenshot.png';
+export { default as foodcastMobileScreenshot } from './foodcast-mobile-screenshot.png';
+export { default as foodcastScreenshot } from './foodcast-screenshot.png';
+export { default as mapuaScreenshot } from './mapua-screenshot.png';
+export { default as merdsBakeshopScreenshot } from './merdsbakshop-screenshot.png';
+export { default as msxScreenshot } from './msx-screenshot.png';
+export { default as razonclinicScreenshot } from './razonclinic-screenshot.png';
+export { default as sabondepotScreenshot } from './sabondepot-screenshot.png';

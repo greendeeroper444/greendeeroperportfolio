@@ -1,0 +1,165 @@
+.about{
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+  
+.aboutHeader{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.aboutHeader h4{
+    font-size: 2rem;
+    color: #fff;
+}
+  
+
+.aboutTabs{
+    display: flex;
+    gap: 1rem; 
+    justify-content: center;
+}
+
+.aboutTabs button{
+    padding: 10px 10px;
+    background-color: transparent; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+}
+
+
+.aboutTabs button.active{
+    color: #fff; 
+    border-bottom: 1px solid var(--thirdary-color); 
+}
+
+
+.aboutSection.show{
+    display: block;
+}
+
+.aboutContent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.aboutLeft{
+    flex: 1;
+}
+
+.aboutLeft h3{
+    color: #fff;
+}
+
+.aboutLeft span{
+    color: #bebebe;
+}
+
+
+.aboutRight{
+    flex: 1;
+    text-align: left;
+}
+
+.techIcons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.techIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.techIcon img{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.aboutRight h3{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+.aboutRight p{
+    font-size: 16px;
+    color: #bebebe;
+}
+
+.mobileScreenShown{
+    display: none;
+}
+
+.seeMoreButtonDefault{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: -20px;
+}
+
+.seeMoreButtonMobile{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: -20px;
+    margin-right: 50px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    
+    .aboutContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .normalScreenShown{
+        display: none;
+    }
+    .mobileScreenShown{
+        display: block;
+    }
+
+    .aboutRight{
+        flex: 1;
+        text-align: left;
+        margin-top: 50px;
+    }
+    
+}
+
+
+@media (max-width: 512px){
+    .aboutHeader h4{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+      
+}

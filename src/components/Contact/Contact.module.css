@@ -1,0 +1,99 @@
+.contact{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.contactHeader{
+    text-align: start;
+    margin-bottom: 2rem;
+}
+.contact .contactHeader h4{
+    font-size: 2rem;
+    color: #fff;
+}
+  
+
+.contactContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.contactLeft{  
+    text-align: left;
+    padding: 20px;
+}
+
+.contactRight{ 
+    text-align: right;
+    padding: 20px;
+}
+
+.contactLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactLink{
+    display: flex;
+    align-items: center;
+}
+
+.contactLink img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contactLink a{
+    text-decoration: none;
+    color: #bebebe;
+    display: flex;
+    align-items: center;
+}
+
+.contactLink span{
+    font-size: 16px;
+}
+
+@media (max-width: 768px){
+    .contactContent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    .contactLink{
+        display: flex;
+        align-items: center;
+    }
+    
+    .contactLink img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .contactLink span{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 512px){
+    .contact .contactHeader h4{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+      
+}
