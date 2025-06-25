@@ -6,3 +6,5 @@ export { default as merdsBakeshopScreenshot } from './merdsbakshop-screenshot.pn
 export { default as msxScreenshot } from './msx-screenshot.png';
 export { default as razonclinicScreenshot } from './razonclinic-screenshot.png';
 export { default as sabondepotScreenshot } from './sabondepot-screenshot.png';
+export { default as collegeDirectoryScreenshot } from './collegedirectory-screenshot.png';
+export { default as presScreenshot } from './pres-screenshot.png';

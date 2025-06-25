@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Project.module.css';
 import { Link } from 'react-router-dom';
-import { cookBookScreenshot, foodcastMobileScreenshot, foodcastScreenshot, mapuaScreenshot, merdsBakeshopScreenshot, msxScreenshot, razonclinicScreenshot, sabondepotScreenshot } from '../../assets/systems';
+import { collegeDirectoryScreenshot, cookBookScreenshot, foodcastMobileScreenshot, foodcastScreenshot, mapuaScreenshot, merdsBakeshopScreenshot, msxScreenshot, presScreenshot, razonclinicScreenshot, sabondepotScreenshot } from '../../assets/systems';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Modal2 from '../Modals/Modal2';
@@ -121,6 +121,22 @@ function ProjectSystem() {
             techStack: ['React.ts', 'Node.js', 'Express.js', 'MongoDB', 'Module CSS'],
             imageUrl: razonclinicScreenshot,
             projectUrl: 'https://github.com/greendeeroper444/razon-clinic'
+        },
+        {
+            title: 'DNSC College Directory',
+            caption: 'A college directory system I built during my OJT at DNSC',
+            description: 'A faculty and staff directory system for Davao del Norte State College. It allows users to search and view profiles of faculty and staff members, including their contact information and office locations.',
+            techStack: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
+            imageUrl: collegeDirectoryScreenshot,
+            projectUrl: 'https://dnsc.edu.ph/facultystaffofficedirectory/admin/faculty-staff-list.php?type=faculty'
+        },
+        {
+            title: 'DNSC PRES',
+            caption: 'A DNSC PRES system I helped develop during my OJT',
+            description: 'A system for Davao del Norte State College that I continued to develop during my OJT. It allows officers to submit requests for website updates, PIO services, postings, and photography.',
+            techStack: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
+            imageUrl: presScreenshot,
+            projectUrl: 'https://dnsc.edu.ph/pres/login'
         },
         {
             title: 'Merds Bakeshop',
