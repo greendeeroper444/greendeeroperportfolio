@@ -125,7 +125,7 @@ function ProjectSystem() {
         {
             title: 'DNSC College Directory',
             caption: 'A college directory system I built during my OJT at DNSC',
-            description: 'A faculty and staff directory system for Davao del Norte State College. It allows users to search and view profiles of faculty and staff members, including their contact information and office locations.',
+            description: 'An office, faculty, and staff directory system for Davao del Norte State College. It allows users to search and view profiles of offices, faculty, and staff members, including their contact information and office locations. The admin has full control over the data, with the ability to add, update, delete, and view records for offices, faculty, and staff.',
             techStack: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
             imageUrl: collegeDirectoryScreenshot,
             projectUrl: 'https://dnsc.edu.ph/facultystaffofficedirectory/admin/faculty-staff-list.php?type=faculty'
@@ -134,7 +134,7 @@ function ProjectSystem() {
             title: 'DNSC PRES',
             caption: 'A DNSC PRES system I helped develop during my OJT',
             description: 'A system for Davao del Norte State College that I continued to develop during my OJT. It allows officers to submit requests for website updates, PIO services, postings, and photography.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
+            techStack: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'MySQL', 'PHP'],
             imageUrl: presScreenshot,
             projectUrl: 'https://dnsc.edu.ph/pres/login'
         },
