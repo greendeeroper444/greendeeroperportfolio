@@ -17,7 +17,7 @@ body{
     font-family: 'Space Grotesk', sans-serif;
     background-color: #111 !important;
     color: #333;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     touch-action: pan-y;
 }
 
@@ -33,6 +33,7 @@ body{
 
 .container-fluid{
     touch-action: pan-y;
+    /* overflow-x: hidden; */
 }
 
 

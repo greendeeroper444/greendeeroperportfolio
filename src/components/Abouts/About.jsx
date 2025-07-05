@@ -36,16 +36,17 @@ function About() {
     };
 
 
+    //fixed: changed x values to prevent horizontal overflow
     const waveSlideVariants = {
         hidden: { 
             opacity: 0, 
-            x: 50, 
+            x: 20, //reduced from 50 to 20
             scale: 1 
         },
         visible: i => ({
             opacity: 1,
             x: 0,
-            scale: [1, 1.2, 1],
+            scale: [1, 1.05, 1], //reduced scale effect from 1.2 to 1.05
             transition: {
                 delay: i * 0.3,
                 type: "spring",

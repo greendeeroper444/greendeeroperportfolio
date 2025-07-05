@@ -29,10 +29,11 @@ function Home({handleScroll}) {
         }
     }, [controls, inView]);
 
+    //fixed: reduced x translation values to prevent horizontal overflow
     const leftVariants = {
         hidden: { 
             opacity: 0, 
-            x: -100 
+            x: -30 //reduced from -100 to -30
         },
         visible: { 
             opacity: 1, 
@@ -44,7 +45,7 @@ function Home({handleScroll}) {
     const rightVariants = {
         hidden: { 
             opacity: 0, 
-            x: 100 
+            x: 30 //reduced from 100 to 30
         },
         visible: { 
             opacity: 1, 
@@ -53,11 +54,12 @@ function Home({handleScroll}) {
         },
     };
 
+     //fixed: reduced translation values
     const topSlantingVariants = {
         hidden: { 
             opacity: 0, 
-            y: -60,
-            x: -30
+            y: -30, //reduced from -60 to -30
+            x: -15  //reduced from -30 to -15
         },
         visible: {
             opacity: 1, 
@@ -70,7 +72,7 @@ function Home({handleScroll}) {
     const bottomVariants = {
         hidden: { 
             opacity: 0, 
-            y: 100 
+            y: 50 //reduced from 100 to 50
         },
         visible: { 
             opacity: 1, 
