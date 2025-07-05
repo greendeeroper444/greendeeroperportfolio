@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className='container-fluid p-0'>
-      {/* <canvas id='canvas'></canvas> */}
+      <canvas id='canvas'></canvas>
       
       {/* only render sidebar when visible */}
       {
