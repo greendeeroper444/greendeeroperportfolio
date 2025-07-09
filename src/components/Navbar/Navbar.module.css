@@ -1,59 +1,104 @@
-.navbar{
-    position: fixed !important;
+.navbar {
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    background-color: rgba(8,5,16,0.4);
+    background-color: rgba(8, 5, 16, 0.4);
     color: #fff;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     z-index: 1000;
-    overflow-x: hidden;
+    padding: 0.75rem 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
 }
 
-.navbarContent{
+.navbarContent {
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
-.menuButton{
-    left: 0;
+.menuButton {
     cursor: pointer;
-    display: flex;
-}
-
-.menu{
-    width: 20px;
-    height: 14px;
     display: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
 }
 
+.menuButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-.logoContainer{
+.menu {
+    width: 24px;
+    height: 24px;
+}
+
+.logoContainer {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 0.75rem;
 }
 
-.logo{
+.logo {
     width: auto;
-    height: 50px;
-    transition: transform 0.3s;
+    height: 40px;
+    transition: transform 0.3s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-.logoContainer h1{
-    margin-top: 10px;
+.logoContainer h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-
-
-@media (max-width: 766px){
-    .menu{
-        display: block !important;
+/* tablet */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
     }
-} 
+    
+    .logoContainer h1 {
+        font-size: 1.25rem;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+}
+
+/*mobile */
+@media (max-width: 766px) {
+    .menu {
+        display: block;
+    }
+    
+    .menuButton {
+        display: flex;
+    }
+    
+    .logoContainer {
+        margin: 0;
+    }
+    
+    .logoContainer h1 {
+        display: none;
+    }
+    
+    .logo {
+        height: 32px;
+    }
+    
+    .navbarContent {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+}
