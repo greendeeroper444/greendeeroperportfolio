@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { css, expressjs, mongodb, nodejs, reactjs, bootstrap, visualstudio } from '../../assets';
+import { css, expressjs, mongodb, nodejs, reactjs, bootstrap, visualstudio, laravel, vue, tailwind, postman } from '../../assets';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import styles from './TechTools.module.css';
@@ -91,11 +91,15 @@ function CurrentTechTools() {
     >
         <motion.div className={styles.techIcon} variants={leftVariants}><img src={mongodb} alt="MongoDB" /><span>MongoDB</span></motion.div>
         <motion.div className={styles.techIcon} variants={topVariants}><img src={expressjs} alt="ExpressJS" /><span>ExpressJS</span></motion.div>
-        <motion.div className={styles.techIcon} variants={bottomVariants}><img src={reactjs} alt="ReactJS" /><span>ReactJS</span></motion.div>
+        <motion.div className={styles.techIcon} variants={topVariants}><img src={reactjs} alt="ReactJS" /><span>ReactJS</span></motion.div>
         <motion.div className={styles.techIcon} variants={topVariants}><img src={nodejs} alt="NodeJS" /><span>NodeJS</span></motion.div>
-        <motion.div className={styles.techIcon} variants={bottomVariants}><img src={reactjs} alt="React Native" /><span>React Native</span></motion.div>
+        <motion.div className={styles.techIcon} variants={topVariants}><img src={reactjs} alt="React Native" /><span>React Native</span></motion.div>
         <motion.div className={styles.techIcon} variants={topVariants}><img src={css} alt="CSS" /><span>CSS</span></motion.div>
-        <motion.div className={styles.techIcon} variants={bottomVariants}><img src={bootstrap} alt="Bootstrap" /><span>Bootstrap</span></motion.div>
+        <motion.div className={styles.techIcon} variants={topVariants}><img src={bootstrap} alt="Bootstrap" /><span>Bootstrap</span></motion.div>
+        <motion.div className={styles.techIcon} variants={rightVariants}><img src={postman} alt="Postman" /><span>Postman</span></motion.div>
+        <motion.div className={styles.techIcon} variants={leftVariants}><img src={laravel} alt="Laravel" /><span>Laravel</span></motion.div>
+        <motion.div className={styles.techIcon} variants={bottomVariants}><img src={vue} alt="Vue" /><span>Vue</span></motion.div>
+        <motion.div className={styles.techIcon} variants={bottomVariants}><img src={tailwind} alt="Tailwind" /><span>Tailwind</span></motion.div>
         <motion.div className={styles.techIcon} variants={rightVariants}><img src={visualstudio} alt="Visual Studio Code" /><span>Visual Studio Code</span></motion.div>
     </motion.div>
   )

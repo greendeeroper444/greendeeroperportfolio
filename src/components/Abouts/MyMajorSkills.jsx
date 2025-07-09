@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styles from './About.module.css';
-import { css, laravel, nodejs, reactjs, bootstrap, php, flutter, dart, tailwind, electronjs } from '../../assets';
+import { css, laravel, nodejs, reactjs, bootstrap, php, flutter, dart, tailwind, electronjs, vue } from '../../assets';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -100,6 +100,7 @@ function MyMajorSkills() {
         <motion.div className={styles.techIcon} variants={leftVariants}><img src={dart} alt="Dart" /><span>Dart</span></motion.div>
         <motion.div className={styles.techIcon} variants={bottomVariants}><img src={tailwind} alt="Tailwind" /><span>Tailwind</span></motion.div>
         <motion.div className={styles.techIcon} variants={bottomVariants}><img src={electronjs} alt="ElectronJS" /><span>ElectronJS</span></motion.div>
+        <motion.div className={styles.techIcon} variants={rightVariants}><img src={vue} alt="Vue" /><span>VueJS</span></motion.div>
     </motion.div>
   )
 }

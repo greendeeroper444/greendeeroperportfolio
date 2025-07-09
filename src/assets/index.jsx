@@ -65,5 +65,6 @@ export { default as tiktok } from './tiktok.png';
 export { default as viewIcon } from './view-icon.png';
 export { default as visualstudio } from './visualstudio.png';
 export { default as vscode } from './vscode.png';
+export { default as vue } from './vue.png';
 export { default as workbench } from './workbench.png';
 export { default as xampp } from './xampp.png';
