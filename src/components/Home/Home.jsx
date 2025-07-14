@@ -5,7 +5,7 @@ import { emailLightIcon, fbLightIcon, instagramLightIcon, mapLightIcon, tiktokLi
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {Link} from 'react-router-dom'
-import resumePdf from '../../assets/resume/resume-panogalon.pdf';
+import resumePdf from '../../assets/resume/resume-greendeeroper.pdf';
 import HomeTextSpanFramerMotion from '../../helpers/HomeTextSpanFramerMotion';
 
 
