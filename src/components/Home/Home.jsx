@@ -5,7 +5,7 @@ import { emailLightIcon, fbLightIcon, instagramLightIcon, mapLightIcon, tiktokLi
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {Link} from 'react-router-dom'
-import cvPdf from '../../assets/cv/greendeeCvResume.pdf';
+import resumePdf from '../../assets/resume/resume.pdf';
 import HomeTextSpanFramerMotion from '../../helpers/HomeTextSpanFramerMotion';
 
 
@@ -202,7 +202,7 @@ function Home({handleScroll}) {
                         <Link to='mailto:greendeeroperpanogalon@gmail.com' target='_blank'><img src={emailLightIcon} alt="Mail Icon" /></Link>
                     </div>
                     <div className={styles.downloadContact}>
-                       <motion.span variants={leftVariants}> <a href={cvPdf} download className={styles.downloadCv}>Download CV</a></motion.span>
+                       <motion.span variants={leftVariants}> <a href={resumePdf} download className={styles.downloadCv}>Download Resume</a></motion.span>
                        <motion.span variants={rightVariants}><Link to='#contact-main-container' onClick={(e) => handleScroll(e, 'contact-main-container')} className={styles.contactMe}>Contact Me</Link></motion.span>
                     </div>
                 </motion.div>
